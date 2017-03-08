@@ -1,0 +1,305 @@
+/*******************************************************************************
+* navigation.css
+********************************************************************************
+* @file         navigation.css
+*
+* @version      SAP ReDesign.2007 $Rev: 0 $
+* @copyright    Copyright (C) 2007 SAP AG
+*
+* @brief        New Design for SAP Websites 2007
+*
+* @author       Andreas Christ <andreas.christ@sp-lion.com>
+*
+* @date         28.02.2008 16:43 / Andreas Christ
+*                 - Bullets richtig ausrichten bei navbox.
+* @date         10.01.2008 17:38 / Andreas Christ
+*                 - Fix fuer Navbox.
+* @date         12.12.2007 15:58 / Andreas Christ
+*                 - insert bluehead.
+*                 - weitere Anpassungen
+* @date         19.10.2007 15:23 / Andreas Christ
+*                 Pilot.
+*
+*******************************************************************************/
+
+/* G_BUTTON ==================================================================
+ @date   : 09.11.2007 10:01 / Andreas Christ
+ @brief  : Import the g_button-styles
+ =============================================================================*/
+@import url(/~sapidb/011000358700001034212007E/g_button.css);
+
+.spacer {
+   float: left;
+   width: 160px;
+   height: 8px;
+}
+
+/* GENERAL ===================================================================
+ @date   : 19.10.2007 15:23 / Andreas Christ
+ @brief  : Allgemeines
+ =============================================================================*/
+body {
+   color: #666666;
+   padding: 0px;
+   margin: 0px;
+   background-color: #E3E3E3;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 11px;
+}
+
+/* SEARCHFIELD AND SEARCHBUTTON ==============================================
+ @date   : 19.10.2007 15:45 / Andreas Christ
+ @brief  : Searchfiled and searchbutton
+ =============================================================================*/
+#bluehead {
+	background-color: #6996BE; /*   padding: 11px 12px 10px 12px;*/
+	padding: 11px 0px 10px 10px;
+	color: White;
+	width: 160px;
+	height: 188px;
+	margin: 0px 0px 0px 0px;
+}
+
+#bluehead .text {
+   margin: 0px;
+   border: 1px solid White;
+   vertical-align: middle;
+   height: 13px;
+   background-color: #96B6D2;
+   padding: 0px 0px 0px 5px;
+   font-size: 10px;
+   color: White;
+}
+
+#bluehead .title {
+	font-weight: bold;
+}
+
+#bluehead p {
+	padding-right: 1em;
+}
+
+#bluehead a  {
+	color: White;
+	text-decoration: underline;
+}
+
+/* SEARCHFIELD AND SEARCHBUTTON ==============================================
+ @date   : 19.10.2007 15:45 / Andreas Christ
+ @brief  : Searchfiled and searchbutton
+ =============================================================================*/
+
+form {
+   margin: 0px;  /* ie macht sonst Luecken :-( */
+}
+
+#quicksearch {
+	background-color: #6996BE; /* padding: 11px 12px 10px 12px;*/
+	padding: 11px 12px 10px 0px;
+}
+
+#quicksearch .text, .button {
+   margin: 0px;
+   border: 1px solid White;
+   vertical-align: middle;
+   height: 13px;
+}
+
+#quicksearch .text {
+   background-color: #96B6D2;
+   padding: 0px 0px 0px 5px;
+   font-size: 10px;
+   color: White;
+}
+
+#quicksearch .button {
+   background-color: #FBBA00;
+   padding: 0px;
+	border-left: none;
+}
+
+
+/* DIV FOR NAVIGATION AREA ===================================================
+ @date   : 25.10.2007 13:03 / Andreas Christ
+ @brief  : Main-navigation area
+ =============================================================================*/
+#nav {
+   margin: 0px 0px 0px 16px;
+   bottom: 0px;
+}
+
+/* MAIN IN NAVIGATION AREA ===================================================
+ @date   : 19.10.2007 15:24 / Andreas Christ
+ @brief  : Main-navigation area
+ =============================================================================*/
+#nav_main {
+   background-color: White;
+   color: #666666;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   width: 160px;
+}
+
+/* #nav_main Links */
+#nav_main a, a:visited {
+   color: #666666;
+   text-decoration: none;
+}
+
+#nav_main a:hover {
+   color: #6996BE;
+   text-decoration: underline;
+}
+
+#nav_main a:active, a:focus {
+   color: #6996BE !important;
+   font-weight: bold;
+}
+
+#nav_main .title {
+   font-size: 12px;
+   font-weight: bold;
+   padding-top: 10px;
+}
+
+/* #nav_main Listen */
+#nav_main ul {
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 20px;
+}
+
+#nav_main ul li {
+   list-style-type: none;
+   list-style-image: url(/~sapidb/011000358700001043782007E/nav_bullet.jpg);
+}
+
+#nav_main .level_open {
+   font-weight: bold;
+   list-style-image: url(/~sapidb/011000358700001043782007E/arrow_down.jpg);
+}
+
+#nav_main .level_open ul {
+   font-weight: normal;
+}
+
+#nav_main .level_close {
+   font-weight: bold;
+   list-style-image: url(/~sapidb/011000358700001043782007E/arrow.jpg);
+}
+
+
+/* TAILER IN NAVIGATION AREA =================================================
+ @date   : 19.10.2007 15:24 / Andreas Christ
+ @brief  : Box under main-navigation area
+ =============================================================================*/
+
+#nav_main .box {
+   background: White;
+}
+
+#nav_main .box ul {
+   margin: 0px;
+   padding: 0px;
+   list-style-type: none;
+}
+
+#nav_main .box li {
+   margin-left: 0px;
+   padding-bottom: 2px;
+   list-style: none inside url(/~sapidb/011000358700001043782007E/nav_bullet.jpg);
+}
+
+/* SHADOWS FOR NAVIGATION-BOXES ==============================================
+ @date   : 26.10.2007 14:36 / Andreas Christ
+ @brief  : shadows for the navigation-area
+ =============================================================================*/
+/* Schatten hinter dem DIV */
+.shadow_body {
+/*position: absolute;*/
+	float: left;
+   background-image: url(/~sapidb/011000358700001034612007E/shadow.jpg);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+/* Ecke des Schattens in der linken unteren Ecke */
+.shadow_bottom_left {
+   background-image: url(/~sapidb/011000358700001034612007E/shadow_bottom_left.jpg);
+   background-position: bottom left;
+   background-repeat: no-repeat;
+}
+
+/* Ecke des Schattens in der rechten oberen Ecke */
+.shadow_top_right {
+   background-image: url(/~sapidb/011000358700001034612007E/shadow_top_right.jpg);
+   background-position: top right;
+   background-repeat: no-repeat;
+   padding:0px 4px 4px 0px;  /* DIV um die Schattenbreite nach rechts unten verschieben  */
+}
+
+
+/* NAVIGATION BOXES FOR HOME-PAGE ============================================
+ @date   : 12.12.2007 15:10 / Andreas Christ
+ @brief  : stylesheets for boxes for home-navigation
+ =============================================================================*/
+
+.nav_box {
+   background-color: White;
+   color: #666666;
+   padding: 0px 10px 10px 10px;
+   width: 150px;
+}
+
+.nav_box p {
+
+}
+
+.nav_box .title {
+   font-size: 12px;
+   font-weight: bold;
+   padding-top: 10px;
+}
+
+.nav_box ul {
+	margin-left: 10px;
+	padding-left: 5px;
+}
+
+.nav_box ul li {
+	/*   text-indent: -16px;*/
+	margin-left: 5px;
+	padding-bottom: 2px;
+	list-style: none outside url(/~sapidb/011000358700001043782007E/nav_bullet.jpg);
+}
+
+.nav_box a  {
+	color: #205072;
+	text-decoration: underline;
+}
+
+.nav_box a:hover {
+	color: #6996BE;
+	text-decoration: none;
+}
+
+/* PartnerEdge BOXES FOR HOME-PAGE ============================================
+ @date   : 28.04.2008 / Andreas Mohr
+ @brief  : stylesheets for PE-boxes for home-navigation
+ =============================================================================*/
+
+.pe_box {
+   background-color: #f8d56f;
+   color: #666666;
+   padding: 0px 10px 10px 10px;
+   width: 150px;
+}
+
+.pe_box p {
+
+}
+
+.pe_box .title {
+   font-size: 12px;
+   font-weight: bold;
+   padding-top: 10px;
+}

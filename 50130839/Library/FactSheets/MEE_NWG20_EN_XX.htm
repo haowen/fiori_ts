@@ -1,0 +1,112 @@
+<!doctype html public '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'!> <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>SAP Fiori Advanced Security Setup (MEE)</TITLE><LINK rel="shortcut icon" href="/~sapidp/002006825000000049342011E.ico">
+<META content="text/html; charset=utf-8" http-equiv=content-type>
+<META content=text/css http-equiv=Content-Style-Type>
+<SCRIPT type=text/javascript src="/~sapidp/002006825000000203192011E.js">
+  </SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  !window.jQuery && document.write('<script src="../../Frame/js/002006825000000203192011E.js"><\/script>' )
+  //]]>
+  </SCRIPT>
+
+
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  if (document.URL.indexOf('https://websmp') == -1) {document.writeln('<link rel="stylesheet" type="text/css" href="../../Frame/css/002006825000000203222011E.css" ><\/link>');} else {document.writeln('<link rel="stylesheet" type="text/css" href="/~sapidp/002006825000000203222011E.css" ><\/link>'); }
+  //]]>
+  </SCRIPT>
+
+<SCRIPT type=text/javascript src="../../Frame/js/jquery.min.js">
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV id=wrapper>
+<DIV id=back align=right>
+<P><A onclick=history.back(-1)>Back</A></P></DIV>
+<H1 id=top>SAP Fiori Advanced Security Setup</H1>
+<!-- <DIV id=links class=reltopics>&nbsp;</DIV> -->
+<P>
+<P>The Fiori Advanced Security is an important part for your companies security setup. In general the goal is to configure your SAP Fiori apps on the highest security standard possible, to prevent any unauthorized access to critical information or even external manipulation of your system. Various configuration steps are necessary to achieve this.</P>
+<P>Configuring the Single sign-on (SSO) is equally of high relevance. In the Fiori Advanced Security you will find two options described in detail for SAML 2.0 and X.509.</P>
+<P></P>
+<P></P>
+<P></P>
+<P></P>
+<DIV class="two-cols no-border" style="PADDING-TOP: 5px; MARGIN: 15px 0px 0px" style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV class=column1>
+<H4>Key process steps covered</H4>
+<P>
+<UL>
+<LI>Set up of SSO SAML 2.0 (Single Sign On)
+<LI>Set up of SSO&nbsp;X.509 (Single Sign On)
+<LI>Set up of SSO with KERBEROS
+<LI>SSO using SAP Authenticator on Mobile Devices</LI></UL>
+
+<!-- <LI>Installation and configuration of Apache Reverse Proxy (Optional) -->
+<!-- <LI>Enablement of the HTTPS for Apache Reverse (Optional -->
+<P></P></DIV>
+<DIV class=column2>
+<H4>Benefits</H4>
+<P>
+<UL>
+<LI>Understand the general security settings required.
+<LI>Implement Single sign-on for better employee efficiency</LI></UL>
+<P></P></DIV></DIV>
+<DIV class=two-cols style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV id=prerequisite>
+<H4>Prerequisite building blocks</H4>
+<P>If you want to activate this scope item, you need to apply the following building blocks in the given sequence. <BR>Before you start with the implementation, refer to the SAP Note (see the Content Library) and the attached Configuration Guide: Getting Started for the latest updates or enhancements to this package.</P>
+<P><A href="../../RDS_FIORI_NWG20V6/Prerequisites_Matrix_RDS_FIORI_NWG20V6_EN_XX.XLS" class="file-xls">For a complete overview, see the Prerequisites Matrix.</A></P>
+<OL>
+<LI><A href="../Configuration/EE0_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE0: SAP Fiori Technical Foundation Configuration</A></LI>
+<LI><A href="../Configuration/EE1_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE1: Basic Network and Security Configuration</A></LI>
+<LI><A href="../Configuration/EE2_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE2: Advanced Network and Security Configuration</A></LI></OL></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+if (document.URL.indexOf('https://websmp') != -1) {
+	var pptcount = 0;
+	$("a").each(function () {
+		var smpLink = $(this).attr("href");
+		if ((smpLink != undefined) && (smpLink.indexOf('service.sap.com') !=  - 1 || smpLink.indexOf('websmp') != -1)) {
+			$(this).attr('href', $(this).attr('href').replace(/http.+service.+com\//i, "../../"));
+			$(this).attr('href', $(this).attr('href').replace(/http.+websmp.+\//i, "../../"));
+		}
+		var classTitle = $(this).attr("class");
+		if (classTitle != undefined && classTitle.indexOf('topic') ==  - 1) {
+			var oldLink = $(this).attr("href");
+			var pptLink = oldLink.indexOf('Process_Overview');
+			var videoLink = oldLink.indexOf('ProFlow');
+			var httpLink = oldLink.indexOf('http');
+			var htmLink = oldLink.indexOf('.htm');
+			if (pptLink == -1 && videoLink == -1) {
+				if (classTitle.indexOf('file-') != -1) {
+					$(this).hide();
+					$('#prerequisite').hide();
+				}
+			} else {
+				pptcount = pptcount + 1;
+				$(this).attr('href', $(this).attr('href').replace(".ppt", ".pdf#page=1&view=FitB&toolbar=1"));
+				$(this).attr('class', $(this).attr('class').replace("ppt", "pdf"));
+				$(this).attr('href', $(this).attr('href').replace("Library/Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+				$(this).attr('href', $(this).attr('href').replace("../Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+			}
+		}
+	})
+	if (pptcount == 0) {
+		$("div").each(function () {
+			var classTitle2 = $(this).attr("class");
+			if (classTitle2 == "reltopics") {
+				$(this).hide();
+			}
+		});
+	}
+} else {
+	$('#download').hide();
+	$('#back').hide();
+};
+
+    //]]>
+    </SCRIPT>
+</BODY></HTML>

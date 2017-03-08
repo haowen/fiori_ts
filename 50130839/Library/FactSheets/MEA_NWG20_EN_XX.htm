@@ -1,0 +1,124 @@
+<!doctype html public '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'!> <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>SAP Fiori Transactional Apps Deployment (MEA)</TITLE><LINK rel="shortcut icon" href="/~sapidp/002006825000000049342011E.ico">
+<META content="text/html; charset=utf-8" http-equiv=content-type>
+<META content=text/css http-equiv=Content-Style-Type>
+<SCRIPT type=text/javascript src="/~sapidp/002006825000000203192011E.js">
+  </SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  !window.jQuery && document.write('<script src="../../Frame/js/002006825000000203192011E.js"><\/script>' )
+  //]]>
+  </SCRIPT>
+
+
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  if (document.URL.indexOf('https://websmp') == -1) {document.writeln('<link rel="stylesheet" type="text/css" href="../../Frame/css/002006825000000203222011E.css" ><\/link>');} else {document.writeln('<link rel="stylesheet" type="text/css" href="/~sapidp/002006825000000203222011E.css" ><\/link>'); }
+  //]]>
+  </SCRIPT>
+
+<SCRIPT type=text/javascript src="../../Frame/js/jquery.min.js">
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV id=wrapper>
+<DIV id=back align=right>
+<P><A onclick=history.back(-1)>Back</A></P></DIV>
+<H1 id=top>SAP Fiori Transactional Apps Deployment</H1>
+<DIV id=links class=reltopics>
+<H4>Find out more</H4>
+<P><A href="../../RDS_FIORI_NWG20V6/RDS_FIORI_NWG20V6_PreCheck_EN_XX.htm" target=undefined class="file-htm">Backend prerequisite checks</A></P>
+<P><A href="../TestScripts/MEA_NWG20_TestScript_EN_XX.zip" target=undefined class="file-zip">Test script</A></P></DIV>
+<P>
+<P>The SAP Fiori Transactional Apps Deployment guides you step by step through the configuration of SAP Fiori Transactional apps.</P>
+<P>For app-specific configuration steps, the SAP Fiori apps reference library is used as the basis to start the deployment of SAP Fiori transactional apps. You will also find detailed information on app-specific backend configuration settings, for example on workflow configuration.</P>
+<P>Find a description of the relevant SAP backend transactions related to the specific SAP Fiori apps in the Test Script documents.For many Fiori apps a frontend process description is also included as part of the Test Script documents.</P>
+<P>Make sure that you check out the possibilities of automating the deployment for some generic configuration settings using the SAP Task Manager.</P>
+<P></P>
+<P></P>
+<DIV class="two-cols no-border" style="PADDING-TOP: 5px; MARGIN: 15px 0px 0px" style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV class=column1>
+<H4>Key process steps covered</H4>
+<P>
+<UL>
+<LI>Generic configuration for transactional apps
+<LI>Settings in the SAP Gateway System
+<LI>Add OData and UI5 Services
+<LI>Activate OData and UI5 Services
+<LI>Assign the Backend Role for the User
+<LI>Settings for the SAP Fiori Launchpad
+<LI>Assign a User to the SAP Fiori Launchpad
+<LI>Use of SAP Fiori apps reference library
+<LI>App-specific configuration using the&nbsp;SAP Fiori apps reference library
+<LI>Additional app-specific configuration
+<LI>Generic Settings for Manager-Role Applications
+<LI>Additional Configuration Steps Approve Requests
+<LI>Additional Configuration Steps for SAP Fiori Apps for SAP CRM
+<LI>Additional Configuration Steps Report Quality Issue / My Quality Tasks
+<LI>Troubleshooting</LI></UL>
+<P></P></DIV>
+<DIV class=column2>
+<H4>Benefits</H4>
+<P>
+<UL>
+<LI>Deploy any transactional SAP Fiori app in your system landscape
+<LI>Automate parts of the generic Fiori configuration steps so that you can quickly carry out the implementation; this is useful especially for 3-tier system landscapes
+<LI>With SAP Fiori apps you get multiple business benefits for example: to free managers’ time spent on administrative tasks for more creative and high-value use, or improve managers'&nbsp;work by giving them a delightful user experience for normal chores and tasks</LI></UL>
+<P></P></DIV></DIV>
+<DIV class=two-cols style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV id=prerequisite>
+<H4>Prerequisite building blocks</H4>
+<P>If you want to activate this scope item, you need to apply the following building blocks in the given sequence. <BR>Before you start with the implementation, refer to the SAP Note (see the Content Library) and the attached Configuration Guide: Getting Started for the latest updates or enhancements to this package.</P>
+<P><A href="../../RDS_FIORI_NWG20V6/Prerequisites_Matrix_RDS_FIORI_NWG20V6_EN_XX.XLS" class="file-xls">For a complete overview, see the Prerequisites Matrix.</A></P>
+<OL>
+<LI><A href="../Configuration/EE0_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE0: SAP Fiori Technical Foundation Configuration</A></LI>
+<LI><A href="../Configuration/EE1_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE1: Basic Network and Security Configuration</A></LI>
+<LI><A href="../Configuration/MF1_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">MF1: SAP Fiori Transactional Apps Deployment</A></LI></OL></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+if (document.URL.indexOf('https://websmp') != -1) {
+	var pptcount = 0;
+	$("a").each(function () {
+		var smpLink = $(this).attr("href");
+		if ((smpLink != undefined) && (smpLink.indexOf('service.sap.com') !=  - 1 || smpLink.indexOf('websmp') != -1)) {
+			$(this).attr('href', $(this).attr('href').replace(/http.+service.+com\//i, "../../"));
+			$(this).attr('href', $(this).attr('href').replace(/http.+websmp.+\//i, "../../"));
+		}
+		var classTitle = $(this).attr("class");
+		if (classTitle != undefined && classTitle.indexOf('topic') ==  - 1) {
+			var oldLink = $(this).attr("href");
+			var pptLink = oldLink.indexOf('Process_Overview');
+			var videoLink = oldLink.indexOf('ProFlow');
+			var httpLink = oldLink.indexOf('http');
+			var htmLink = oldLink.indexOf('.htm');
+			if (pptLink == -1 && videoLink == -1) {
+				if (classTitle.indexOf('file-') != -1) {
+					$(this).hide();
+					$('#prerequisite').hide();
+				}
+			} else {
+				pptcount = pptcount + 1;
+				$(this).attr('href', $(this).attr('href').replace(".ppt", ".pdf#page=1&view=FitB&toolbar=1"));
+				$(this).attr('class', $(this).attr('class').replace("ppt", "pdf"));
+				$(this).attr('href', $(this).attr('href').replace("Library/Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+				$(this).attr('href', $(this).attr('href').replace("../Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+			}
+		}
+	})
+	if (pptcount == 0) {
+		$("div").each(function () {
+			var classTitle2 = $(this).attr("class");
+			if (classTitle2 == "reltopics") {
+				$(this).hide();
+			}
+		});
+	}
+} else {
+	$('#download').hide();
+	$('#back').hide();
+};
+
+    //]]>
+    </SCRIPT>
+</BODY></HTML>

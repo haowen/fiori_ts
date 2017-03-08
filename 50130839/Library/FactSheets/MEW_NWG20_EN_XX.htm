@@ -1,0 +1,111 @@
+<!doctype html public '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'!> <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>SAP Fiori Launchpad Operation (MEW)</TITLE><LINK rel="shortcut icon" href="/~sapidp/002006825000000049342011E.ico">
+<META content="text/html; charset=utf-8" http-equiv=content-type>
+<META content=text/css http-equiv=Content-Style-Type>
+<SCRIPT type=text/javascript src="/~sapidp/002006825000000203192011E.js">
+  </SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  !window.jQuery && document.write('<script src="../../Frame/js/002006825000000203192011E.js"><\/script>' )
+  //]]>
+  </SCRIPT>
+
+
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  if (document.URL.indexOf('https://websmp') == -1) {document.writeln('<link rel="stylesheet" type="text/css" href="../../Frame/css/002006825000000203222011E.css" ><\/link>');} else {document.writeln('<link rel="stylesheet" type="text/css" href="/~sapidp/002006825000000203222011E.css" ><\/link>'); }
+  //]]>
+  </SCRIPT>
+
+<SCRIPT type=text/javascript src="../../Frame/js/jquery.min.js">
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV id=wrapper>
+<DIV id=back align=right>
+<P><A onclick=history.back(-1)>Back</A></P></DIV>
+<H1 id=top>SAP Fiori Launchpad Operation</H1>
+<!-- <DIV id=links class=reltopics>&nbsp;</DIV> -->
+<P>
+<P>Once the SAP Fiori Launchpad has been deployed, there are typical tasks that occur repeatedly during operation. For example, you might want to make new Transactional, Analytical, or Factsheet SAP Fiori apps available for your end user.</P>
+<P>You can also find an easy explanation on how to add an SAP NetWeaver Business Client (NWBC) app to the SAP Fiori Launchpad.</P>
+<P>You can then make full use of the power of the SAP Fiori Launchpad by accessing News via a Fiori tile.</P>
+<P></P>
+<P></P>
+<DIV class="two-cols no-border" style="PADDING-TOP: 5px; MARGIN: 15px 0px 0px" style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV class=column1>
+<H4>Key process steps covered</H4>
+<P>
+<UL>
+<LI>Adding a Transactional App into SAP Fiori Launchpad
+<LI>Adding an Analytical App into SAP Fiori Launchpad
+<LI>Adding a Fact Sheet into SAP Fiori Launchpad
+<LI>Adding a NWBC App into SAP Fiori Launchpad
+<LI>Adding a News Tile into SAP Fiori Launchpad</LI>
+<LI>Adding app types used in S/4HANA to Fiori Launchpad (WebDynpro/ FPM, Design Studio) </LI></UL>
+<P></P></DIV>
+<DIV class=column2>
+<H4>Benefits</H4>
+<P>
+<UL>
+<LI>Carry out standard recurring task in the Launchpad during operation at your company
+<LI>Adding tailored SAP Fiori apps to the SAP Fiori Launchpad
+<LI>Access the SAP NetWeaver Business Client (NWBC) from Fiori Launchpad</LI></UL>
+<P></P></DIV></DIV>
+<DIV class=two-cols style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV id=prerequisite>
+<H4>Prerequisite building blocks</H4>
+<P>If you want to activate this scope item, you need to apply the following building blocks in the given sequence. <BR>Before you start with the implementation, refer to the SAP Note (see the Content Library) and the attached Configuration Guide: Getting Started for the latest updates or enhancements to this package.</P>
+<P><A href="../../RDS_FIORI_NWG20V6/Prerequisites_Matrix_RDS_FIORI_NWG20V6_EN_XX.XLS" class="file-xls">For a complete overview, see the Prerequisites Matrix.</A></P>
+<OL>
+<LI><A href="../Configuration/EE0_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE0: SAP Fiori Technical Foundation Configuration</A></LI>
+<LI><A href="../Configuration/EE1_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE1: Basic Network and Security Configuration</A></LI>
+<LI><A href="../Configuration/EE3_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE3: Launchpad Operation</A></LI></OL></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+if (document.URL.indexOf('https://websmp') != -1) {
+	var pptcount = 0;
+	$("a").each(function () {
+		var smpLink = $(this).attr("href");
+		if ((smpLink != undefined) && (smpLink.indexOf('service.sap.com') !=  - 1 || smpLink.indexOf('websmp') != -1)) {
+			$(this).attr('href', $(this).attr('href').replace(/http.+service.+com\//i, "../../"));
+			$(this).attr('href', $(this).attr('href').replace(/http.+websmp.+\//i, "../../"));
+		}
+		var classTitle = $(this).attr("class");
+		if (classTitle != undefined && classTitle.indexOf('topic') ==  - 1) {
+			var oldLink = $(this).attr("href");
+			var pptLink = oldLink.indexOf('Process_Overview');
+			var videoLink = oldLink.indexOf('ProFlow');
+			var httpLink = oldLink.indexOf('http');
+			var htmLink = oldLink.indexOf('.htm');
+			if (pptLink == -1 && videoLink == -1) {
+				if (classTitle.indexOf('file-') != -1) {
+					$(this).hide();
+					$('#prerequisite').hide();
+				}
+			} else {
+				pptcount = pptcount + 1;
+				$(this).attr('href', $(this).attr('href').replace(".ppt", ".pdf#page=1&view=FitB&toolbar=1"));
+				$(this).attr('class', $(this).attr('class').replace("ppt", "pdf"));
+				$(this).attr('href', $(this).attr('href').replace("Library/Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+				$(this).attr('href', $(this).attr('href').replace("../Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+			}
+		}
+	})
+	if (pptcount == 0) {
+		$("div").each(function () {
+			var classTitle2 = $(this).attr("class");
+			if (classTitle2 == "reltopics") {
+				$(this).hide();
+			}
+		});
+	}
+} else {
+	$('#download').hide();
+	$('#back').hide();
+};
+
+    //]]>
+    </SCRIPT>
+</BODY></HTML>

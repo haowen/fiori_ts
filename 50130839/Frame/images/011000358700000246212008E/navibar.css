@@ -1,0 +1,65 @@
+
+/* HEADER-NAVIGATION: MONTH ==================================================
+ @date   : 21.12.2007 12:35 / Andreas Christ
+ @brief  : Navigationbar for month
+ =============================================================================*/
+.nav_bar {
+   margin-top: 10px;
+	float: left;
+	background-color: inherit;
+	height: 27px;
+	line-height: 27px;
+/*	width: 600px;*/
+width: 520px;
+}
+
+.nav_bar .center {
+	float: left;
+	background-image: url(back.jpg);
+	background-repeat: repeat-x;
+/*   width: 520px;*/
+width: 510px;
+	height: 27px;
+	padding: 0px;
+}
+
+.nav_bar .left {
+	float: left;
+	background-image: url(border_left.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 5px;
+	height: 27px;
+	padding: 0px;
+}
+.nav_bar .right {
+	float: left;
+	background-image: url(border_right.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 4px;
+	height: 27px;
+	padding: 0px;
+}
+
+.nav_bar .button {
+	float: left;
+	border: none; /*	margin: 4px 4px 4px 4px;*/
+	margin: 1px 0px 0px 0px;
+	line-height: 21px;
+	vertical-align: middle;
+	height: 21px;
+	padding: 0px 5px 0px 5px;
+}
+
+.nav_bar .active {
+	background-color: White;
+}
+
+.nav_bar .passive {
+	background-color: transparent;
+}
+
+.nav_bar img {
+	float: left;
+}

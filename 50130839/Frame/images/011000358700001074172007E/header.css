@@ -1,0 +1,141 @@
+/*******************************************************************************
+* header.css
+********************************************************************************
+* @file         header.css
+*
+* @version      SAP ReDesign.2007 $Rev: 0 $
+* @copyright    Copyright (C) 2007 SAP AG
+*
+* @brief        New Design for SAP Websites 2007
+*
+* @author       Andreas Christ <andreas.christ@sp-lion.com>
+*
+* @date         12.12.2007 13:39 / Andreas Christ
+*                 Changes for ie7 and ie6.
+* @date         20.11.2007 15:04 / Andreas Christ
+*                 Final version.
+* @date         05.11.2007 11:50 / Andreas Christ
+*                 Pilot.
+*
+*******************************************************************************/
+
+/* GENERAL ===================================================================
+ @date   : 05.11.2007 11:50 / Andreas Christ
+ @brief  :
+ =============================================================================*/
+body {
+   margin: 0px 0px 0px 0px;
+   background-color: #828282;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN-DIVS =================================================================
+ @date   : 23.10.2007 14:48 / Andreas Christ
+ @brief  : Haupt-DIVs zur Einteilung in rechts/links
+ =============================================================================*/
+#back {
+   float: left;
+   background-color: #E3E3E3;
+   background-image: url(/~sapidb/011000358700001074172007E/shadow_right_grey.jpg);
+   background-repeat: repeat-y;
+   background-position: right;
+   width: 974px;
+}
+
+/* Vater aller Kinder */
+#content {
+   float: left;
+   padding: 0px;
+   margin: 0px;
+   width: 965px;  /* 956px;*/
+   height: 102px;
+}
+
+#top {
+   float: left;
+   width: 932px;
+   height: 27px;
+   margin: 0px 0px 0px 16px;
+   padding: 0px;
+   background-color: #E3E3E3;
+   text-align: right;
+   font-size: 11px;
+   vertical-align: middle;
+   line-height: 27px;
+	display: inline;
+}
+
+/* Haupt-DIV */
+#bottom {
+	float: left; /*   width: 839px;*/
+	width: 847px;
+	height: 74px;
+	margin: 0px 0px 0px 16px;
+	padding: 0px 0px 0px 10px;
+	background-image: url(/~sapidb/011000358700001074172007E/header_back.jpg);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: White;
+	line-height: 32px;
+	display: inline;
+}
+
+#bottom img {
+   float: left;
+}
+
+#bottom p {
+   float: left;
+   padding: 0px;
+   margin: 0px;
+}
+
+/* Logo-DIV */
+#logo {
+   float: left;
+   background-color: White;
+	 margin: 0px 0px 0px 0px;
+   padding: 0px;
+   height: 74px;
+   width: 91px;
+}
+
+#logo img {
+	float: right;
+}
+
+a, a:visited {
+	color: #666666;
+	text-decoration: none;
+	padding: 0px 3px 0px 0px;
+	vertical-align: middle;
+}
+
+a:hover {
+/*	color: #6996BE; */
+	color: #307eab;
+}
+
+a:active, a:focus {
+	color: #F0AB00;
+}
+
+select {
+   background-color: #EEEEEE;
+   color: #333333;
+   padding-left: 1em;
+   vertical-align: middle;
+   margin-right: 1em;
+   border: 1px solid White;
+	font-size: 9px;
+}
+
+option {
+	/*	background-color: #96B6D2; */
+	background-color: White;
+	padding-left: 1em;
+	color: Black;
+}
+

@@ -1,0 +1,61 @@
+/*******************************************************************************
+* g_button.css
+********************************************************************************
+* @file         g_button.css
+*
+* @version      SAP ReDesign.2007 $Rev: 0 $
+* @copyright    Copyright (C) 2007 SAP AG
+*
+* @brief        New Design for SAP Websites 2007
+*
+* @author       Andreas Christ <andreas.christ@sp-lion.com>
+*
+* @date         09.11.2007 09:59 / Andreas Christ
+*                 Pilot.
+*
+*******************************************************************************/
+
+
+/* G_BUTTON ==================================================================
+ @date   : 23.10.2007 12:55 / Andreas Christ
+ @brief  : graphics  button
+ =============================================================================*/
+.g_button {
+   padding: 0px;
+}
+
+.g_button table {
+   border-collapse: collapse;
+}
+
+.g_button td {
+   border: none;
+   height: 23px;
+   padding: 0px;
+   margin: 0px;
+}
+
+.g_button td.left {
+   width: 14px;
+   background-repeat: no-repeat;
+}
+
+.g_button td.body {
+   font-size: 11px;
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
+.g_button td.right {
+   width: 12px;
+   background-repeat: no-repeat;
+}
+
+a.g_button, a.g_button:visited {
+   color: White !important;
+   text-decoration: none !important;
+}
+
+a.g_button:hover {
+	cursor: pointer;
+}

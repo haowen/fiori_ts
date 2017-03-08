@@ -1,0 +1,73 @@
+/*******************************************************************************
+* footer.css
+********************************************************************************
+* @file         footer.css
+*
+* @version      SAP ReDesign.2007 $Rev: 0 $
+* @copyright    Copyright (C) 2007 SAP AG
+*
+* @brief        New Design for SAP Websites 2007
+*
+* @author       Andreas Christ <andreas.christ@sp-lion.com>
+*
+* @date         20.11.2007 15:23 / Andreas Christ
+*                 Final version.
+* @date         08.11.2007 12:54 / Andreas Christ
+*                 Bilderpfad angepasst.
+* @date         26.10.2007 08:23 / Andreas Christ
+*                 Pilot.
+*
+*******************************************************************************/
+
+/* GENERAL ===================================================================
+ @date   : 30.10.2007 15:08 / Andreas Christ
+ @brief  : Global settings
+ =============================================================================*/
+body {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	color: White;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #828282;
+}
+
+a {
+   margin: 0px 1em 0px 1em;
+   color: White;
+   text-decoration: none;
+}
+
+a:hover {
+   color: White;
+   text-decoration: underline;
+}
+
+
+#footer {
+	width: 965px;
+	height: 100px;
+	background-image: url(/~sapidb/011000358700001074522007E/footer_back.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	padding: 3px 0px 0px 0px;
+}
+
+/* LEFT AREA =================================================================
+ @date   : 26.10.2007 08:23 / Andreas Christ
+ @brief  : settings for the left DIV-area
+ =============================================================================*/
+#copy {
+	float: left;
+	width: 500px;
+}
+
+
+/* RIGHT AREA ================================================================
+ @date   : 26.10.2007 08:23 / Andreas Christ
+ @brief  : settings for the right DIV-area
+ =============================================================================*/
+#other {
+	float: right;
+	text-align: right;
+}
