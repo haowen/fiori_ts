@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Configuration options:
+
+<item link="http://www.yourdomain.com" image="images/sample5.jpg"/>
+Each image should be added as per the example above. The image location is relative to the html page. (or can be absolute if you
+include "http://...".
+
+
+
+Parameter                         Value                                                         Description
+
+autoScroll                         true or false                                         Determines whether the images automatically scroll after a set period of time
+pauseAmount                 any number greater than 0                 The amount of time that the image is paused before scrolling to the next one.
+                                                                                                        (in milliseconds) eg: 1000 = 1 second
+snapOn                                 true or false                                         [Not in use] Determines whether the scroller snaps to the closest image after releasing the
+                                                                                                        scroll button.
+snapSpeed                         any number greater than 0                 [Not in use] The speed in seconds that it takes to snap to the closest image after releasing
+                                                                                                        the scroll button.
+speed                                 any number greater than 0                 The speed in seconds that it takes to scroll to the next image when you click
+                                                                                                        the up/down arrows or when autoscrolling.
+blurOn                                 true or false                                         Determines whether the images are blured when scrolling.
+blurAmount                         any number greater than 0                 Determines the amount of blur used.
+scrollerOn                         true or false                                         Determines whether the scrollbar is visible or not.
+easingType                         Back, Bounce, Elastic,
+                                        Regular, Strong or None                        Determines the type of easing applied when scrolling. (please note that these
+                                                                                                        values must have a captial first letter)
+urlTarget                         _blank or _self                                 Determines whether links open in a new window (_blank) or
+itemsPerScreen                 any number greater than 0                 [Not in use] The number of images visible at a time. eg, if you set this to "3" then each of
+                                                                                                        the images will be 1/3rd of the height of the movie.
+-->
+
+<xml>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++ Start configuration options Flash 1 in template right hand ++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+        <flash1
+        autoScroll="true"
+        pauseAmount="4000"
+        snapOn="true"
+        snapSpeed="1"
+        speed="1"
+        blurOn="false"
+        blurAmount="5"
+        scrollerOn="false"
+        easingType="Regular"
+        urlTarget="_blank"
+        itemsPerScreen="1"
+        >
+		         <item link="http://intranet.sap.com/partnerportal/partnerforum" image="img_flash/Webinar_SSP_EcoHub.jpg"/>
+				 
+                 <item link="http://www.sap.com/community/campaign/2009_03_BS7/index.epx?URL_ID=CRM-GM09-LEP-BSW_GBAN" image="img_flash/webcast_PP.jpg"/>
+
+
+                <item link="/~form/sapnet?_SHORTKEY=01100035870000703087&_SCENARIO=01100035870000000192&_OBJECT=011000358700000161542009E" image="img_flash/sapphire.jpg"/>
+								
+								<item link="/~form/sapnet?_SHORTKEY=01100035870000717431&_SCENARIO=01100035870000000192&_ADDINC=&" image="img_flash/best_run_now.gif"/>
+        </flash1>
+
+</xml>

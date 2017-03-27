@@ -1,0 +1,115 @@
+<!doctype html public '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'!> <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>SAP Fiori Analytical Apps Deployment (MEB)</TITLE><LINK rel="shortcut icon" href="/~sapidp/002006825000000049342011E.ico">
+<META content="text/html; charset=utf-8" http-equiv=content-type>
+<META content=text/css http-equiv=Content-Style-Type>
+<SCRIPT type=text/javascript src="/~sapidp/002006825000000203192011E.js">
+  </SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  !window.jQuery && document.write('<script src="../../Frame/js/002006825000000203192011E.js"><\/script>' )
+  //]]>
+  </SCRIPT>
+
+
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  if (document.URL.indexOf('https://websmp') == -1) {document.writeln('<link rel="stylesheet" type="text/css" href="../../Frame/css/002006825000000203222011E.css" ><\/link>');} else {document.writeln('<link rel="stylesheet" type="text/css" href="/~sapidp/002006825000000203222011E.css" ><\/link>'); }
+  //]]>
+  </SCRIPT>
+
+<SCRIPT type=text/javascript src="../../Frame/js/jquery.min.js">
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV id=wrapper>
+<DIV id=back align=right>
+<P><A onclick=history.back(-1)>Back</A></P></DIV>
+<H1 id=top>SAP Fiori Analytical Apps Deployment</H1>
+<!-- <DIV id=links class=reltopics>&nbsp;</DIV> -->
+<P>
+<P>Get detailed information on how to implement any SAP Fiori app based on the architectural type for SAP Fiori Analytical Apps. It helps to deploy any SAP Fiori analytical app in a rapid-deployment solution using the SAP Fiori apps reference library.</P>
+<P>Make sure that you check out the possibilities of automating the deployment for some generic configuration settings using the SAP Task Manager.</P>
+<P></P>
+<DIV class="two-cols no-border" style="PADDING-TOP: 5px; MARGIN: 15px 0px 0px" style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV class=column1>
+<H4>Key process steps covered</H4>
+<P>
+<UL>
+<LI>Use of SAP Fiori Apps Reference Library
+<LI>SAP Fiori Analytical App Configuration Walkthrough Example
+<LI>HANA DB: Assign the Role for the User
+<LI>Gateway System: Activate UI5 Services,&nbsp;Assign a User to the SAP Fiori Launchpad
+<LI>SAP Fiori Analytical without Smart Business cockpits App Configuration
+<LI>KPI Modeler: Create KPI
+<LI>KPI Modeler: Create Evaluation
+<LI>KPI Modeler: Add Tile
+<LI>KPI Modeler: Configure KPI Drill-Down
+<LI>KPI Modeler: Manage KPI Authorizations
+<LI>Troubleshooting</LI></UL>
+<P></P></DIV>
+<DIV class=column2>
+<H4>Benefits</H4>
+<P>
+<UL>
+<LI>Make use of the capabilities on the SAP Fiori Reference Library
+<LI>Step-by-Step approach to deploy any of the SAP&nbsp;Fiori Analytical apps (including the latest releases)
+<LI>The SAP Fiori Analytical Apps are needed to build a SAP Smart Business Cockpit
+<LI>Automate parts of the Fiori configuration setting, so that you can quickly deploy to several SAP backend systems</LI></UL>
+<P></P></DIV></DIV>
+<DIV class=two-cols style="PADDING-TOP: 5px; MARGIN: 5px 0px 0px">
+<DIV id=prerequisite>
+<H4>Prerequisite building blocks</H4>
+<P>If you want to activate this scope item, you need to apply the following building blocks in the given sequence. <BR>Before you start with the implementation, refer to the SAP Note (see the Content Library) and the attached Configuration Guide: Getting Started for the latest updates or enhancements to this package.</P>
+<P><A href="../../RDS_FIORI_NWG20V6/Prerequisites_Matrix_RDS_FIORI_NWG20V6_EN_XX.XLS" class="file-xls">For a complete overview, see the Prerequisites Matrix.</A></P>
+<OL>
+<LI><A href="../Configuration/EE0_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE0: SAP Fiori Technical Foundation Configuration</A></LI>
+<LI><A href="../Configuration/EE1_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">EE1: Basic Network and Security Configuration</A></LI>
+<LI><A href="../Configuration/MF2_NWG20_BB_ConfigGuide_EN_XX.doc" target=_blank class="file-doc">MF2: SAP Fiori Analytical Apps Deployment</A></LI></OL></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+if (document.URL.indexOf('https://websmp') != -1) {
+	var pptcount = 0;
+	$("a").each(function () {
+		var smpLink = $(this).attr("href");
+		if ((smpLink != undefined) && (smpLink.indexOf('service.sap.com') !=  - 1 || smpLink.indexOf('websmp') != -1)) {
+			$(this).attr('href', $(this).attr('href').replace(/http.+service.+com\//i, "../../"));
+			$(this).attr('href', $(this).attr('href').replace(/http.+websmp.+\//i, "../../"));
+		}
+		var classTitle = $(this).attr("class");
+		if (classTitle != undefined && classTitle.indexOf('topic') ==  - 1) {
+			var oldLink = $(this).attr("href");
+			var pptLink = oldLink.indexOf('Process_Overview');
+			var videoLink = oldLink.indexOf('ProFlow');
+			var httpLink = oldLink.indexOf('http');
+			var htmLink = oldLink.indexOf('.htm');
+			if (pptLink == -1 && videoLink == -1) {
+				if (classTitle.indexOf('file-') != -1) {
+					$(this).hide();
+					$('#prerequisite').hide();
+				}
+			} else {
+				pptcount = pptcount + 1;
+				$(this).attr('href', $(this).attr('href').replace(".ppt", ".pdf#page=1&view=FitB&toolbar=1"));
+				$(this).attr('class', $(this).attr('class').replace("ppt", "pdf"));
+				$(this).attr('href', $(this).attr('href').replace("Library/Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+				$(this).attr('href', $(this).attr('href').replace("../Simulations/", "http://help.sap.com/saap/Library/Simulations/"));
+			}
+		}
+	})
+	if (pptcount == 0) {
+		$("div").each(function () {
+			var classTitle2 = $(this).attr("class");
+			if (classTitle2 == "reltopics") {
+				$(this).hide();
+			}
+		});
+	}
+} else {
+	$('#download').hide();
+	$('#back').hide();
+};
+
+    //]]>
+    </SCRIPT>
+</BODY></HTML>

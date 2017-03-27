@@ -1,0 +1,258 @@
+/* 011000358700001043782007E = navigation */
+/*******************************************************************************
+* global_home.css
+********************************************************************************
+* @file         global_home.css
+*
+* @version      SAP ReDesign.2007 $Rev: 0 $
+* @copyright    Copyright (C) 2007/2008 SAP AG
+*
+* @brief        Stylesheet for Global Partner Port - Homepage
+*
+* @author       Andreas Christ <andreas.christ@sp-lion.com>
+*
+* @date         23.01.2008 12:50 / Andreas Christ
+*                 - Anpassungen fuer ie6.
+* @date         23.01.2008 12:50 / Andreas Christ
+*                 - Pilot.
+*
+*******************************************************************************/
+
+/* Abstandhalter nach den Boxen */
+.spacer {
+   float: left;
+   width: 170px;
+   height: 8px;
+  line-height: 8px;  /* noetig wegen ie6 */
+}
+
+#top_header {
+  display: inline;  /* ie6-fix */
+  float: left;
+  padding: 0px 0px 0px 0px;
+  margin: 16px 0px 0px -5px;
+  background-image: url(../011000358700001074172007E/header_back.jpg);
+  background-color: White;
+  height: 74px;
+  width: 968px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+#top_space {
+  display: inline;  /* ie6-fix */
+  float:left;
+  width: 12px;
+  height: 1px;
+}
+
+/* Ersatz fuer den navigation-Frame */
+#content_left {
+  float:left;
+  display: inline;  /* ie6-fix */
+  width: 188px;
+  padding-left: 2px;
+  padding-right: 10px;
+}
+
+#content_left p {
+  font-size: 11px;
+  color: #333333;
+  margin: 0px 10px 10px 0px;
+  padding: 0px;
+}
+
+/* BOXES =====================================================================
+ @date   : 23.01.2008 13:15 / Andreas Christ
+ @brief  : boxes on the left side of global-site
+ =============================================================================*/
+#content_left .title {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 5px 3px 15px;
+  margin-top: 10px;
+  color: #333333;
+  border: none;
+  border-bottom:1px solid white;
+  background-color: #F0F0F0;
+  text-transform: uppercase;
+}
+
+#content_left a, a:link, a:visited {
+  color: #205072;
+  text-decoration: underline;
+}
+
+#content_left a:hover {
+  color: #6996BE;
+  text-decoration: none;
+}
+
+#content_left .box {
+   padding: 10px;
+   padding-left: 15px;
+   padding-right: 5px;
+   background-color:#F0F0F0;
+}
+
+#content_left .box ul {
+   margin: 0px 0px 1.8ex 0px;
+   padding: 0px;
+   list-style-type: none;
+}
+
+#content_left .box li {
+   padding: 0px 5px 5px 17px;
+   background-image: url(/~sapidb/011000358700001034262007E/bullet.jpg);
+   background-repeat: no-repeat;
+   background-position: left 0px;
+}
+
+
+/* SEARCHFIELD AND SEARCHBUTTON ==============================================
+ @date   : 19.10.2007 15:45 / Andreas Christ
+ @brief  : Searchfiled and searchbutton
+ =============================================================================*/
+#bluehead {
+  float:left;
+  position: relative;  /* ie6-fix */
+  display: inline;  /* ie6-fix */
+  background-color: #6996BE; /*   padding: 11px 12px 10px 12px;*/
+  padding: 0px 10px 0px 15px;
+  color: White;
+  width: 175px;
+  height: 209px;
+  margin: 0px 0px 0px -5px;
+  /*margin: 0px 0px 0px 0px;*/
+}
+
+#bluehead .text {
+   margin: 0px;
+   border: 1px solid White;
+   vertical-align: middle;
+   height: 13px;
+   background-color: #96B6D2;
+   padding: 0px 0px 0px 5px;
+   font-size: 10px;
+   color: White;
+}
+
+#bluehead .title {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
+
+#bluehead p {
+  padding-right: 1em;
+}
+
+#bluehead a, a:link, a:visited, a:focus, a:active  {
+  color: White;
+  text-decoration: underline;
+}
+
+#bluehead a:hover  {
+  text-decoration: none;
+}
+
+
+/* DIV FOR NAVIGATION AREA ===================================================
+ @date   : 25.10.2007 13:03 / Andreas Christ
+ @brief  : Main-navigation area
+ =============================================================================*/
+#nav {
+   margin: 0px 0px 0px 16px;
+   bottom: 0px;
+}
+
+/* MAIN IN NAVIGATION AREA ===================================================
+ @date   : 19.10.2007 15:24 / Andreas Christ
+ @brief  : Main-navigation area
+ =============================================================================*/
+#nav_main {
+   background-color: White;
+   color: #666666;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   width: 170px;
+}
+
+/* #nav_main Links */
+#nav_main a, a:visited {
+   color: #666666;
+   text-decoration: none;
+}
+
+#nav_main a:hover {
+   color: #6996BE;
+   text-decoration: underline;
+}
+
+#nav_main a:active, a:focus {
+   color: #6996BE !important;
+   font-weight: bold;
+}
+
+#nav_main .title {
+   font-size: 12px;
+   font-weight: bold;
+   padding-top: 10px;
+}
+
+/* #nav_main Listen */
+#nav_main ul {
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 20px;
+}
+
+#nav_main ul li {
+   list-style-type: none;
+   list-style-image: url(/~sapidb/011000358700001043782007E/nav_bullet.jpg);
+}
+
+#nav_main .level_open {
+   font-weight: bold;
+   list-style-image: url(/~sapidb/011000358700001043782007E/arrow_down.jpg);
+}
+
+#nav_main .level_open ul {
+   font-weight: normal;
+}
+
+#nav_main .level_close {
+   font-weight: bold;
+   list-style-image: url(/~sapidb/011000358700001043782007E/arrow.jpg);
+}
+
+/* NAVIGATION BOXES FOR HOME-PAGE ============================================
+ @date   : 12.12.2007 15:10 / Andreas Christ
+ @brief  : stylesheets for boxes for home-navigation
+ =============================================================================*/
+
+/* SUBSET AUS FLAP-IT ========================================================
+ @date   : 13.12.2007 17:28 / Andreas Christ
+ @brief  : Subset aus dem flapit-Stylesheet
+ =============================================================================*/
+.level1 {
+  border-bottom: 1px solid white;
+  padding: 6px 6px 6px 10px;
+  margin: 0px 0px 0px 0px;
+  font-size: 11px;
+}
+
+.level1 a, a:visited, a:link, a:visited, a:focus, a:active {
+  color: #666666;
+  font-size: 11px;
+}
+
+.level1 a:hover {
+   color: #6996BE;
+   text-decoration: underline;
+}
+
+.level1 img {
+   border: none;
+}
+
